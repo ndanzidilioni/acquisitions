@@ -3,8 +3,8 @@ import 'dotenv/config';
 export default {
   schema: './src/models/*.js',
   out: './drizzle',
-  dialatect: 'postgresql',
+  dialect: 'postgresql',
   dbCredentials: {
-    url: ProcessingInstruction.env.DATABASE_URL,
+    url: process.env.DATABASE_URL,
   },
 };
